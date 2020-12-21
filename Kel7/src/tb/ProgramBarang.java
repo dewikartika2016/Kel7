@@ -9,12 +9,8 @@ public class ProgramBarang {
 	static Scanner scanner;
 	static ManageBarang ManageBarang;
 
-<<<<<<< HEAD
-	public static void probarang() throws SQLException {
-		
-=======
-	public static void main(String[] args) throws SQLException {	
->>>>>>> c5d8ac43c292c5df5c23fbbdbfa1e9e26e933a1b
+	
+	public static void probarang() throws SQLException {	
 		ManageBarang = new ManageBarang();
 		 scanner = new Scanner(System.in);
 	        Integer option = 0;

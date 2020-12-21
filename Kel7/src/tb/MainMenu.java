@@ -8,11 +8,8 @@ public class MainMenu {
 	static void pilihanMenu(int menuPilihan) throws SQLException {
 	    switch(menuPilihan) {
 	        case 1:
-<<<<<<< HEAD
 	        	ProgramUser user = new ProgramUser();
 	        	user.prouser();
-=======
->>>>>>> c5d8ac43c292c5df5c23fbbdbfa1e9e26e933a1b
 	            break;
 	        case 2:
 	        	ProgramBarang barang = new ProgramBarang();
@@ -23,6 +20,8 @@ public class MainMenu {
 	        	stok.probarang();
 	            break;
 	        case 4:
+	        	Transaksi transaksi = new Transaksi();
+	        	transaksi.Menu();
 	            break;
 	        case 5:
 	            break;
@@ -35,6 +34,7 @@ public class MainMenu {
 	public static Scanner input =new Scanner(System.in);
 	
 	public static void mainMenu() throws SQLException {
+		
 //		String a;
 //		do {​​
 //			do {​​
@@ -53,7 +53,8 @@ public class MainMenu {
 		System.out.println("5. LAPORAN ");
 		System.out.println("6. LOG OUT");
 		System.out.print("Masukkan Pilihan : [1]/[2]/[3]/[4]/[5]/[6] :");
-        try {
+        try 
+        {
             menuPilihan = input.nextInt();
             loopX = 1;
             if(menuPilihan<1 || menuPilihan>6)
@@ -61,7 +62,8 @@ public class MainMenu {
             	System.out.println("Masukkan Angka 1-6!");
             }
         }
-        catch(InputMismatchException e) {
+        catch(InputMismatchException e) 
+        {
             System.out.println("Harus Memasukkan Angka!");
         }
     }

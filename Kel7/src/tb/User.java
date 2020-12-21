@@ -4,10 +4,10 @@ import java.sql.SQLException;
 
 public class User {
 	
-	private String username;
-	private String loginTerakhir;
-	private String password;
-	private String email;
+	public String username;
+	public String loginTerakhir;
+	public String password;
+	public String email;
 	
 	public User(String username, String loginTerakhir, String email, String password) {
 	super();

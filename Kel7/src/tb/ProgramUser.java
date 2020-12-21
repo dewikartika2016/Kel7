@@ -59,14 +59,13 @@ public class ProgramUser {
 	                    break;
 	                   
 	                    case 0:
+	                    	MainMenu.mainMenu();
 	                    break;
 	                    default:
 	                    System.out.println("========================================");
 	                    System.out.println("||       Inputan Data Tidak Valid     ||");
 	                    System.out.println("========================================");
 	                }
-	                
-	                
 	            } while (option != 0);
 	         
 	    }
