@@ -16,8 +16,8 @@ public class MainMenu {
 	        	barang.probarang();
 	            break;
 	        case 3:
-	        	ProgramBarang stok = new ProgramBarang();
-	        	stok.probarang();
+	        	ProgramRestock stok = new ProgramRestock();
+	        	stok.prorestock();
 	            break;
 	        case 4:
 	        	Transaksi transaksi = new Transaksi();
@@ -34,11 +34,6 @@ public class MainMenu {
 	public static Scanner input =new Scanner(System.in);
 	
 	public static void mainMenu() throws SQLException {
-		
-//		String a;
-//		do {​​
-//			do {​​
-//			a="Y";
 	    int loopX = 0;
 	    int menuPilihan = 0;
 	    while(loopX == 0) 
@@ -48,11 +43,11 @@ public class MainMenu {
 		System.out.println("|===============================================|");
 		System.out.println("1. PENGELOLAAN USER");
 		System.out.println("2. PENGELOLAAN DATA MASTER BARANG");
-		System.out.println("3. PENGELOLAAN RESTOK BARANG");
+		System.out.println("3. PENGELOLAAN RESTOCK BARANG");
 		System.out.println("4. PENGELOLAAN TRANSAKSI PENJUALAN BARANG");
 		System.out.println("5. LAPORAN ");
 		System.out.println("6. LOG OUT");
-		System.out.print("Masukkan Pilihan : [1]/[2]/[3]/[4]/[5]/[6] :");
+		System.out.print("Masukkan Pilihan : [1]/[2]/[3]/[4]/[5]/[6] : ");
         try 
         {
             menuPilihan = input.nextInt();
@@ -67,7 +62,7 @@ public class MainMenu {
             System.out.println("Harus Memasukkan Angka!");
         }
     }
-    System.out.println("===============================\n");
+    System.out.println("=================================================");
     pilihanMenu(menuPilihan);
 	}
 }

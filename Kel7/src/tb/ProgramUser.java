@@ -71,9 +71,9 @@ public class ProgramUser {
 	    }
 	    
 	    private static void cariKoleksi() throws SQLException {
-	      System.out.println("\n================================");
-	      System.out.println("||         Cari User          ||");
-	      System.out.println("================================");
+	    	System.out.println("\n=====================================");
+	    	System.out.println("||           Cari User             ||");
+	    	System.out.println("=====================================");
 	        ArrayList<User> ListUser =  ManageUser.cari();
 	        
 	        for( User user : ListUser) {
@@ -86,9 +86,9 @@ public class ProgramUser {
 	    }
 	    
 	    private static void editKoleksi() throws SQLException {
-	    	System.out.println("\n================================");
-	        System.out.println("||          Edit User         ||");
-	        System.out.println("================================");
+	    	System.out.println("\n=====================================");
+	        System.out.println("||             Edit User             ||");
+	    	System.out.println("\n=====================================");
 	        
 	        lihatKoleksi();
 	        

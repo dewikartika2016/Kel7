@@ -32,15 +32,15 @@ public class Login {
 		
 		while(true && salahMaksimal<3) 
 		{
-		System.out.println("=====================");
-		System.out.println("=======LOG IN========");
-		System.out.println("=====================");
+		System.out.println("=========================");
+		System.out.println("=========LOG IN==========");
+		System.out.println("=========================");
 		System.out.print("MASUKKAN USERNAME: ");
 		USERR = input.nextLine();
 		
 		System.out.print("MASUKKAN PASSWORD: ");
 		PASS = input.nextLine();
-		System.out.println("=====================");
+		System.out.println("=========================");
 		try 
 		{
 //			String sql1 = "SELECT * FROM user WHERE username=? and password=?";
@@ -59,7 +59,7 @@ public class Login {
 				if(PASS.equals(rsPASSWORD))
 				{
 					
-				System.out.println("Berhasil Log in");
+				System.out.println(">>> Berhasil Log in <<<");
 				String sql2 = "UPDATE user SET login_terakhir=? WHERE username=?";
 				PreparedStatement pstT = c.prepareStatement(sql2);
 				Timestamp timestamp = new Timestamp(new Date().getTime());
