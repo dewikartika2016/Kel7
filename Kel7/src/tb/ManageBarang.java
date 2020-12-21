@@ -65,19 +65,19 @@ public ManageBarang() {
     public int tambahData() {
     	
     	Integer result = 0;
-        System.out.print("SKU : ");
+        System.out.print("SKU \t\t: ");
         String sku = scanner.nextLine();
         
-        System.out.print("Nama Barang : ");
+        System.out.print("Nama Barang \t: ");
         String nama = scanner.nextLine();
         
-        System.out.print("Stok : ");
+        System.out.print("Stok \t\t: ");
         Integer stok = Integer.parseInt(scanner.nextLine());
         
-        System.out.print("Harga Beli : ");
+        System.out.print("Harga Beli \t: ");
         Integer hBeli = Integer.parseInt(scanner.nextLine());
         
-        System.out.print("Harga Jual : ");
+        System.out.print("Harga Jual \t: ");
         Integer hJual = Integer.parseInt(scanner.nextLine());
         
         String sql = "INSERT INTO barang (sku, nama, stock, harga_beli, harga_jual) VALUES(?,?,?,?,?)";

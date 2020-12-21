@@ -7,22 +7,21 @@ import java.util.Scanner;
 public class MainMenu {
 	private static void pilihanMenu(int menuPilihan) throws SQLException {
 	    switch(menuPilihan) {
-	        case 1://masterBarang
+	        case 1:
 	            break;
 	        case 2:
 	            break;
 	        case 3:
 	            break;
-	        case 4://transaksi
+	        case 4:
 	            break;
 	        case 5:
 	            break;
 	        case 6:
-	        	Login.login();
 	            break;
 	        default:
 				System.out.println("Pilihan Anda Tidak Tersedia");
-	    }
+	    }while (menuPilihan!=6);
 	}
 	public static Scanner input =new Scanner(System.in);
 	
@@ -35,9 +34,11 @@ public class MainMenu {
 	    int menuPilihan = 0;
 	    while(loopX == 0) 
 	    {
-		System.out.println("MENU:");
+	    System.out.println("\n|===============================================|");
+		System.out.println("|\t\t\tMENU\t\t\t|");
+		System.out.println("|===============================================|");
 		System.out.println("1. PENGELOLAAN USER");
-		System.out.println("2. PENGELOLAAN DATA MASTER BARANG");  //kalau bisa gabungin master barang dengan restock
+		System.out.println("2. PENGELOLAAN DATA MASTER BARANG");
 		System.out.println("3. PENGELOLAAN RESTOK BARANG");
 		System.out.println("4. PENGELOLAAN TRANSAKSI PENJUALAN BARANG");
 		System.out.println("5. LAPORAN ");

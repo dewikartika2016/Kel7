@@ -31,16 +31,16 @@ public ManageUser() {
     	try {
 			statement = connection.createStatement();
 			
-			String sql = "SELECT username, email, password FROM user";
+			String sql = "SELECT username, email, login_terakhir, password FROM user";
 			
 			ResultSet rs = statement.executeQuery(sql);
 		
 			
 			
 			while(rs.next()) {
-				
 				User user = new User(
 						rs.getString("username"),
+						rs.getString("login_terakhir"),
 						rs.getString("email"),
 						rs.getString("password")
 						);
@@ -107,8 +107,8 @@ public ManageUser() {
 		        if(rs.next()){
 		        	
 		        	User user = new User(
-							
-							rs.getString("username"),
+		        			rs.getString("username"),
+							rs.getString("login_terakhir"),
 							rs.getString("email"),
 							rs.getString("password")
 							);

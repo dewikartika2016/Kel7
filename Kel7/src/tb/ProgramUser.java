@@ -78,9 +78,10 @@ public class ProgramUser {
 	        ArrayList<User> ListUser =  ManageUser.cari();
 	        
 	        for( User user : ListUser) {
-	        	System.out.println("Username : " + user.getusername());
-	        	System.out.println("Email : " + user.getemail());
-	        	System.out.println("Password : " + user.getpassword());
+	        	System.out.println("Username \t: " + user.getusername());
+	        	System.out.println("Login Terakhir \t: " + user.getlogin());
+	        	System.out.println("Email \t\t: " + user.getemail());
+	        	System.out.println("Password \t: " + user.getpassword());
 	        } 
 	        
 	    }
@@ -128,9 +129,10 @@ public class ProgramUser {
 	       
 	        
 	        for( User user : ListUser) {
-	        	System.out.println("\nUsername : " + user.getusername());
-	        	System.out.println("Email : " + user.getemail());
-	        	System.out.println("Password : " + user.getpassword());
+	        	System.out.println("\nUsername \t: " + user.getusername());
+	        	System.out.println("Login Terakhir \t: " + user.getlogin());
+	        	System.out.println("Email \t\t: " + user.getemail());
+	        	System.out.println("Password \t: " + user.getpassword());
 	        	
 	        } 
 	    

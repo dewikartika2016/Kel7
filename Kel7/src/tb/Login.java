@@ -36,9 +36,9 @@ public class Login {
 		
 		while(true && salahMaksimal<3) 
 		{
-		System.out.println("=====================");
-		System.out.println("=======LOG IN========");
-		System.out.println("=====================");
+		System.out.println("=========================");
+		System.out.println("=\tLOG IN\t\t=");
+		System.out.println("=========================");
 		System.out.print("MASUKKAN USERNAME: ");
 		user = input.nextLine();
 		
@@ -61,7 +61,7 @@ public class Login {
 			}
 				if(indikatorLogin==1)
 				{
-					System.out.println("Berhasil Log in");
+					System.out.println("\n>>> Berhasil Log in <<<");
 					String sql2 = "UPDATE user SET login_terakhir=? WHERE username=?";
 					PreparedStatement pstT = connection.prepareStatement(sql2);
 					Timestamp timestamp = new Timestamp(new Date().getTime());

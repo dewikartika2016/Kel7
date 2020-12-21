@@ -1,15 +1,19 @@
 package tb;
 
+import java.sql.SQLException;
+
 public class User {
 	
 	private String username;
+	private String loginTerakhir;
 	private String password;
 	private String email;
 	
-	public User(String username, String email, String password) {
+	public User(String username, String loginTerakhir, String email, String password) {
 	super();
 		
 	    this.username = username;
+	    this.loginTerakhir = loginTerakhir;
 		this.email = email;
 		this.password = password;
 	}
@@ -23,7 +27,11 @@ public class User {
 	}
 	
 	public void setusername(String username) {
-		username = username;
+		this.username = username;
+	}
+	
+	public String getlogin() {
+		return loginTerakhir;
 	}
 	
 	public String getemail() 
@@ -44,6 +52,4 @@ public class User {
 	{
 		this.password = password;
 	}
-	
-	
 }
