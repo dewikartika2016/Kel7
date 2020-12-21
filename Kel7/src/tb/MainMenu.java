@@ -5,13 +5,19 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class MainMenu {
-	private static void pilihanMenu(int menuPilihan) throws SQLException {
+	static void pilihanMenu(int menuPilihan) throws SQLException {
 	    switch(menuPilihan) {
-	        case 1://masterBarang
+	        case 1:
+	        	ProgramUser user = new ProgramUser();
+	        	user.prouser();
 	            break;
 	        case 2:
+	        	ProgramBarang barang = new ProgramBarang();
+	        	barang.probarang();
 	            break;
 	        case 3:
+	        	ProgramBarang stok = new ProgramBarang();
+	        	stok.probarang();
 	            break;
 	        case 4://transaksi
 	            break;

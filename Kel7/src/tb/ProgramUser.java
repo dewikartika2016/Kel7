@@ -9,7 +9,7 @@ public class ProgramUser {
 	static Scanner scanner;
 	static ManageUser ManageUser;
 
-	public static void main(String[] args) throws SQLException {
+	public static void prouser() throws SQLException {
 		
 		ManageUser = new ManageUser();
 		 scanner = new Scanner(System.in);

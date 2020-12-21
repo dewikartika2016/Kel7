@@ -5,11 +5,11 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ProgramBarang {
-	
+
 	static Scanner scanner;
 	static ManageBarang ManageBarang;
 
-	public static void main(String[] args) throws SQLException {
+	public static void probarang() throws SQLException {
 		
 		ManageBarang = new ManageBarang();
 		 scanner = new Scanner(System.in);

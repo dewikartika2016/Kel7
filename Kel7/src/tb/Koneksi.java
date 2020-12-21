@@ -5,10 +5,10 @@ import java.sql.*;
 public class Koneksi {
 	public static java.sql.Connection koneksi;
 //	private static Connection koneksi;
-	
+
 	public static Connection koneksiSQL() throws SQLException{
 	try {
-		String url = "jdbc:mysql://localhost/tbbpl";
+		String url = "jdbc:mysql://localhost/tbbpl?serverTimezone=Asia/Jakarta";
 		String user = "root";
 		String pass = "";
 		DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());

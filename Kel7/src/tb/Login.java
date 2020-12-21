@@ -28,7 +28,7 @@ public class Login {
 	public static void login() throws SQLException {
 			
 		Scanner input = new Scanner (System.in);
-		
+	
 		Connection connection = null;
 		connection = Koneksi.koneksiSQL();
 		String sqlupdate = "UPDATE tbbpl SET password=?  where username=?";
