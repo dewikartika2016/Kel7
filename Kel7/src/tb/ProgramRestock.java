@@ -29,8 +29,7 @@ public class ProgramRestock {
             System.out.println("         [ 0 ] Exit                    ");
             System.out.println("---------------------------------------");
             System.out.print("Pilihan No : ");
-            option = Integer.parseInt(scr.nextLine());
-            
+            option = Integer.parseInt(scr.nextLine());            
 	        switch (option) {
 	                    
 	                    case 1:
